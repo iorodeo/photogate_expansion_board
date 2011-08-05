@@ -1,0 +1,322 @@
+(pcb /home/jo/work/kicad/photogate_breakout_board/photogate_breakout_board.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "Kicad's PCBNEW")
+    (host_version "(2011-07-19)-testing")
+  )
+  (resolution mil 10)
+  (unit mil)
+  (structure
+    (layer Front
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer Back
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  2725 -2000  2700 -2000  2700 -4800  6250 -4800  6250 -2000
+            2700 -2000)
+    )
+    (via "Via[0-1]_35:25_mil" "Via[0-1]_35:0_mil")
+    (rule
+      (width 10)
+      (clearance 12.1)
+      (clearance 12.1 (type default_smd))
+      (clearance 3 (type smd_smd))
+    )
+  )
+  (placement
+    (component R3
+      (place R7 4375 -2975 front 270 (PN 150))
+      (place R6 4150 -4375 front 270 (PN 5K))
+      (place R5 5100 -4375 front 90 (PN 220))
+      (place R4 3925 -4375 front 90 (PN 220))
+      (place R3 5100 -2950 front 90 (PN 220))
+      (place R2 3925 -2975 front 90 (PN 220))
+      (place R1 4150 -2975 front 270 (PN 5K))
+      (place R8 4375 -4375 front 270 (PN 150))
+      (place R9 5325 -2950 front 270 (PN 5K))
+      (place R10 5350 -4375 front 90 (PN 5K))
+      (place R11 5550 -2950 front 270 (PN 150))
+      (place R12 5600 -4375 front 270 (PN 150))
+    )
+    (component PIN_ARRAY_4X1
+      (place P4 4425 -2525 front 0 (PN CONN_4))
+      (place P5 4425 -3925 front 0 (PN CONN_4))
+      (place P8 5600 -2525 front 0 (PN CONN_4))
+      (place P9 5600 -3925 front 0 (PN CONN_4))
+    )
+    (component PIN_ARRAY_2X2
+      (place P6 5125 -2575 front 0 (PN CONN_2X2))
+      (place P7 5125 -3975 front 0 (PN CONN_2X2))
+      (place P3 3950 -3975 front 0 (PN CONN_2X2))
+      (place P2 3950 -2575 front 0 (PN CONN_2X2))
+    )
+    (component "LED-3MM"
+      (place D4 5775 -4350 front 0 (PN LED))
+      (place D3 4550 -4375 front 0 (PN LED))
+      (place D2 5725 -2925 front 0 (PN LED))
+      (place D1 4550 -2975 front 0 (PN LED))
+    )
+    (component "DIP-14__300"
+      (place U1 3275 -4075 front 270 (PN SN7407))
+    )
+    (component 6X2_SHRD_HEADER
+      (place P1 3250 -2725 front 90 (PN CONN_6X2))
+    )
+    (component MOUNT_HOLE_4_40
+      (place MOUNT_HOLE,1 2825 -2125 front 0 (PN VAL**))
+      (place MOUNT_HOLE,2 6125 -2125 front 0 (PN VAL**))
+      (place MOUNT_HOLE,3 2825 -4675 front 0 (PN VAL**))
+      (place MOUNT_HOLE,4 6125 -4675 front 0 (PN VAL**))
+    )
+  )
+  (library
+    (image R3
+      (outline (path signal 12  -150 0  -130 0))
+      (outline (path signal 12  150 0  130 0))
+      (outline (path signal 12  130 0  130 40))
+      (outline (path signal 12  130 40  -130 40))
+      (outline (path signal 12  -130 40  -130 -40))
+      (outline (path signal 12  -130 -40  130 -40))
+      (outline (path signal 12  130 -40  130 0))
+      (outline (path signal 12  -130 20  -110 40))
+      (pin Round[A]Pad_55_mil 1 -150 0)
+      (pin Round[A]Pad_55_mil 2 150 0)
+    )
+    (image PIN_ARRAY_4X1
+      (outline (path signal 15  -200 50  -200 -50))
+      (outline (path signal 15  -200 -50  200 -50))
+      (outline (path signal 15  200 -50  200 50))
+      (outline (path signal 15  200 50  -200 50))
+      (pin Rect[A]Pad_60x60_mil 1 -150 0)
+      (pin Round[A]Pad_60_mil 2 -50 0)
+      (pin Round[A]Pad_60_mil 3 50 0)
+      (pin Round[A]Pad_60_mil 4 150 0)
+    )
+    (image PIN_ARRAY_2X2
+      (outline (path signal 12  -100 100  100 100))
+      (outline (path signal 12  100 100  100 -100))
+      (outline (path signal 12  100 -100  -100 -100))
+      (outline (path signal 12  -100 -100  -100 100))
+      (pin Rect[A]Pad_60x60_mil 1 -50 -50)
+      (pin Round[A]Pad_60_mil 2 -50 50)
+      (pin Round[A]Pad_60_mil 3 50 -50)
+      (pin Round[A]Pad_60_mil 4 50 50)
+    )
+    (image "LED-3MM"
+      (outline (path signal 10  72 -50  72 50))
+      (pin Round[A]Pad_66_mil 1 -50 0)
+      (pin Round[A]Pad_66_mil 2 50 0)
+    )
+    (image "DIP-14__300"
+      (outline (path signal 15  -400 100  400 100))
+      (outline (path signal 15  400 -100  -400 -100))
+      (outline (path signal 15  -400 -100  -400 100))
+      (outline (path signal 15  -400 50  -350 50))
+      (outline (path signal 15  -350 50  -350 -50))
+      (outline (path signal 15  -350 -50  -400 -50))
+      (outline (path signal 15  400 100  400 -100))
+      (pin Rect[A]Pad_55x55_mil 1 -300 -150)
+      (pin Round[A]Pad_55_mil 2 -200 -150)
+      (pin Round[A]Pad_55_mil 3 -100 -150)
+      (pin Round[A]Pad_55_mil 4 0 -150)
+      (pin Round[A]Pad_55_mil 5 100 -150)
+      (pin Round[A]Pad_55_mil 6 200 -150)
+      (pin Round[A]Pad_55_mil 7 300 -150)
+      (pin Round[A]Pad_55_mil 8 300 150)
+      (pin Round[A]Pad_55_mil 9 200 150)
+      (pin Round[A]Pad_55_mil 10 100 150)
+      (pin Round[A]Pad_55_mil 11 0 150)
+      (pin Round[A]Pad_55_mil 12 -100 150)
+      (pin Round[A]Pad_55_mil 13 -200 150)
+      (pin Round[A]Pad_55_mil 14 -300 150)
+    )
+    (image 6X2_SHRD_HEADER
+      (outline (path signal 15  350 180  450 180))
+      (outline (path signal 15  450 180  450 -180))
+      (outline (path signal 15  450 -180  350 -180))
+      (outline (path signal 15  -260 -220  -320 -290))
+      (outline (path signal 15  -320 -290  -210 -290))
+      (outline (path signal 15  -210 -290  -200 -290))
+      (outline (path signal 15  -200 -290  -260 -220))
+      (outline (path signal 15  -450 180  350 180))
+      (outline (path signal 15  350 -180  -450 -180))
+      (outline (path signal 15  -450 -180  -450 180))
+      (pin Rect[A]Pad_70x70_mil 1 -250 -50)
+      (pin Round[A]Pad_70_mil 2 -250 50)
+      (pin Round[A]Pad_70_mil 3 -150 -50)
+      (pin Round[A]Pad_70_mil 4 -150 50)
+      (pin Round[A]Pad_70_mil 5 -50 -50)
+      (pin Round[A]Pad_70_mil 6 -50 50)
+      (pin Round[A]Pad_70_mil 7 50 -50)
+      (pin Round[A]Pad_70_mil 8 50 50)
+      (pin Round[A]Pad_70_mil 9 150 -50)
+      (pin Round[A]Pad_70_mil 10 150 50)
+      (pin Round[A]Pad_70_mil 11 250 -50)
+      (pin Round[A]Pad_70_mil 12 250 50)
+    )
+    (image MOUNT_HOLE_4_40
+      (pin Round[A]Pad_130_mil @1 0 0)
+    )
+    (padstack Round[A]Pad_130_mil
+      (shape (circle Front 130))
+      (shape (circle Back 130))
+      (attach off)
+    )
+    (padstack Round[A]Pad_55_mil
+      (shape (circle Front 55))
+      (shape (circle Back 55))
+      (attach off)
+    )
+    (padstack Round[A]Pad_60_mil
+      (shape (circle Front 60))
+      (shape (circle Back 60))
+      (attach off)
+    )
+    (padstack Round[A]Pad_66_mil
+      (shape (circle Front 66))
+      (shape (circle Back 66))
+      (attach off)
+    )
+    (padstack Round[A]Pad_70_mil
+      (shape (circle Front 70))
+      (shape (circle Back 70))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_55x55_mil
+      (shape (rect Front -27.5 -27.5 27.5 27.5))
+      (shape (rect Back -27.5 -27.5 27.5 27.5))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_60x60_mil
+      (shape (rect Front -30 -30 30 30))
+      (shape (rect Back -30 -30 30 30))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_70x70_mil
+      (shape (rect Front -35 -35 35 35))
+      (shape (rect Back -35 -35 35 35))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:25_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+    (padstack "Via[0-1]_35:0_mil"
+      (shape (circle Front 35))
+      (shape (circle Back 35))
+      (attach off)
+    )
+  )
+  (network
+    (net /5V
+      (pins P4-1 P4-4 P5-1 P5-4 P8-1 P8-4 P9-1 P9-4 D4-1 D3-1 D2-1 D1-1 U1-14 P1-3)
+    )
+    (net /A0
+      (pins P2-1 P1-6)
+    )
+    (net /A1
+      (pins P6-1 P1-8)
+    )
+    (net /A2
+      (pins P3-1 P1-10)
+    )
+    (net /A3
+      (pins P7-1 P1-12)
+    )
+    (net /D2
+      (pins P2-3 P1-9)
+    )
+    (net /D3
+      (pins P6-3 P1-11)
+    )
+    (net /D4
+      (pins P3-3 P1-2)
+    )
+    (net /D5
+      (pins P7-3 P1-4)
+    )
+    (net /LED0
+      (pins R2-2 U1-2)
+    )
+    (net /LED1
+      (pins R3-2 U1-4)
+    )
+    (net /LED2
+      (pins R4-2 U1-6)
+    )
+    (net /LED3
+      (pins R5-2 U1-8)
+    )
+    (net /PG0
+      (pins R1-1 P4-2 P2-2 P2-4 U1-1)
+    )
+    (net /PG1
+      (pins R9-1 P8-2 P6-2 P6-4 U1-3)
+    )
+    (net /PG2
+      (pins R6-1 P5-2 P3-2 P3-4 U1-5)
+    )
+    (net /PG3
+      (pins R10-1 P9-2 P7-2 P7-4 U1-9)
+    )
+    (net GND
+      (pins R7-2 R6-2 R1-2 R8-2 R9-2 R10-2 R11-2 R12-2 U1-7 P1-7)
+    )
+    (net "N-000009"
+      (pins R8-1 P5-3)
+    )
+    (net "N-000013"
+      (pins R7-1 P4-3)
+    )
+    (net "N-000017"
+      (pins R12-1 P9-3)
+    )
+    (net "N-000021"
+      (pins R11-1 P8-3)
+    )
+    (net "N-000024"
+      (pins R4-1 D3-2)
+    )
+    (net "N-000025"
+      (pins R2-1 D1-2)
+    )
+    (net "N-000030"
+      (pins R3-1 D2-2)
+    )
+    (net "N-000031"
+      (pins R5-1 D4-2)
+    )
+    (class kicad_default "" /A0 /A1 /A2 /A3 /D2 /D3 /D4 /D5 /LED0 /LED1 /LED2
+      /LED3 /PG0 /PG1 /PG2 /PG3 "N-000009" "N-000013" "N-000017" "N-000021"
+      "N-000024" "N-000025" "N-000030" "N-000031"
+      (circuit
+        (use_via Via[0-1]_35:25_mil)
+      )
+      (rule
+        (width 10)
+        (clearance 12.1)
+      )
+    )
+    (class PWR_GND /5V GND
+      (circuit
+        (use_via Via[0-1]_35:25_mil)
+      )
+      (rule
+        (width 20)
+        (clearance 12.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
